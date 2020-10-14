@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Viga', sans-serif;
+    /* overflow: hidden; */
+    
+    
+    /* background-color:white; */
+   
+}
+h2{
+    border: red 3px solid;
+    
+}
+img {
+    border-radius: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    padding: 0px;
+    justify-content: space-around;
+    background-color:#181919;
+    color:whitesmoke;
+    height: 35px;
+    width: 100%;
+    position: fixed;
+    border: 2px solid red;
+}
+header h1{
+    width: 1px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    /* padding-left: 10px; */
+    margin: 10px;
+    
+}
+
+.topPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./lib/back.jpg);
+    background-size: cover;
+    
+}
+.topPart div{
+    max-width: 800px;
+
+}
+
+.topPart div h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 4em;
+}
+
+.topPart div p {
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.midPart{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    /* background:#15151C; */
+   
+    background: #fff;
+    
+}
+.midPart div{
+    max-width: 800px;
+
+}
+
+.midPart div h2 {
+    margin-top: 15%;
+    padding: -100px;
+    
+    font-size: 4em;
+}
+
+
+.midPart div p {
+    
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+.content{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 90vw;
+}
+.content div {
+    text-align: center;
+    width: 100px;
+
+}
+
+
+.botPart{
+    display: block;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    /* background:#15151C; */
+    background: #fff;
+    
+}
+
+
+.botPart div h2 {
+    margin-top: 15%;
+    padding: -100px;
+    
+    font-size: 4em;
+}
+
+
+.botPart div p {
+    
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+.work{
+    display: block;
+    justify-content: center;
+}
+.work h2 {
+    height: 1%;
+    width: 1%;
+    
+}
+
+.setCard1 {
+/* border:2px solid red; */
+width: 100%;
+height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.scrolldown{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scrolldown span ,.scrolldown2 span{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width:100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right:2px solid #fff;
+    animation: animate 2s linear infinite;
+    opacity: 0;
+
+}
+
+.scrolldown span:nth-child(1),.scrolldown2 span:nth-child(1) {
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2),.scrolldown2 span:nth-child(2) {
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3),.scrolldown2 span:nth-child(3) {
+    transform: translate(15px,15px);
+    animation-delay: 0.s;
+}
+
+@keyframes animate{
+    0%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%
+    {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    50%,100%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+}
+
+.scrolldown2{
+    
+    position: absolute;
+    bottom: -700px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown2 span {
+    border-bottom: 2px solid #000;
+    border-right:2px solid #000;
+}
+
+.foot{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
+    height: 15vh;
+    width: 90vw;
+    border: none;
+}
+
+.foot a , p {
+    text-align: center;
+}
+.foot h1 {
+    font-family: none;
+}
+
+footer {
+    height: 100px;
+    display: block;
+    justify-content: center;
+    padding: 5px;
+    background-color: #181919;
+    color: #fff;
+}
