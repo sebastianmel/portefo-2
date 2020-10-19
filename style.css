@@ -9,10 +9,17 @@
     /* background-color:white; */
    
 }
-h2{
-    border: red 3px solid;
-    
+
+.bloque{
+    width: 200px;
+    height: 150px;
 }
+button{
+    background-color:#181919;
+    color:whitesmoke;
+    border-radius: 9px;
+}
+
 img {
     border-radius: 15px;
 }
@@ -28,10 +35,11 @@ header{
     height: 35px;
     width: 100%;
     position: fixed;
-    border: 2px solid red;
+    
 }
 header h1{
     width: 1px;
+
 }
 
 a{
@@ -106,27 +114,29 @@ a{
     height: 50vh;
     width: 90vw;
 }
+
 .content div {
     text-align: center;
     width: 100px;
 
 }
 
+/* work */
+
 
 .botPart{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 60vh;
     /* background:#15151C; */
+   
     background: #fff;
     
 }
-
-
 .botPart div h2 {
-    margin-top: 15%;
-    padding: -100px;
+    /* margin-top: 15%; */
+    /* padding-bottom: 100px; */
     
     font-size: 4em;
 }
@@ -137,23 +147,54 @@ a{
     font-size: 1.2em;
     opacity: 0.8;
 }
-.work{
-    display: block;
-    justify-content: center;
-}
-.work h2 {
-    height: 1%;
-    width: 1%;
-    
+
+.content1{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 50vh; */
+    /* width: 90vw; */
 }
 
-.setCard1 {
-/* border:2px solid red; */
-width: 100%;
-height: 50%;
-    display: flex;
-    justify-content: space-around;
+.card{
+    width: 200px;
 }
+
+.carousel{
+    
+    height: auto;
+    width: 800px;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d4852;
+    border-radius: 3px;
+}
+
+
+
+
 
 
 
@@ -234,8 +275,8 @@ height: 50%;
     display:flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5%;
-    height: 15vh;
+    /* margin: 5%; */
+    
     width: 90vw;
     border: none;
 }
@@ -248,10 +289,69 @@ height: 50%;
 }
 
 footer {
-    height: 100px;
+    /* height: 100px; */
     display: block;
+    align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 15px;
     background-color: #181919;
     color: #fff;
+}
+
+
+
+@media screen and (max-width: 817px){
+    .carousel{
+    
+        
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 719px){
+    .carousel{
+    
+        
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 617px){
+    .carousel{
+    
+        
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 518px){
+    .carousel{
+    
+        
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 469px){
+    .carousel{
+    
+        
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .carousel{
+    
+        
+        width: 370px;
+    }
+    .icon{
+        width: 70px;
+        height: 70px;
+    }
+    .skil{
+        font-size: 1px;
+        margin: 0.5px;
+    }
 }

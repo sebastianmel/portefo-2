@@ -2,17 +2,21 @@
 <html lang="en">
 
 <head>
+    
+    <meta name="theme-color" content="#000000">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>www.MonPortfofo.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./lib/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./lib/favicon.ico" type="image/x-icon">
+    
 
 </head>
 
 <body>
     <header>
-        <h1>S</h1><h2> Full Stack Developper</h2>
+        <h1>S</h1><a> Front-End Developper</a>
         <nav>
             <a href="#Skills">Skills</a>
             <a href="#work">work</a>
@@ -21,15 +25,14 @@
 
     </header>
 
-    <section id='all'>
+    <main id='all'>
         <section class="topPart">
 
             <div class='description'>
                 <img src="./lib/me.jpg" alt="">
                 <h2>Méliot Sébastian</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta optio aspernatur unde
-                    facilis animi voluptas aut molestias non impedit. Atque ea obcaecati possimus ab modi tempore, vitae
-                    officiis deserunt.</p>
+                <p>Actuellement en 3ère année de Développement web à L’École Multimédia (Paris 3), l’informatique me passionne depuis toujours. J’ai donc décidé d’en faire mon métier, un métier que je considère comme très challengeant et donc épanouissant.</p>
+            
             </div>
 
             <div class="scrolldown">
@@ -48,27 +51,29 @@
                 <div class="content">
                     <div>
                         <img src="./lib/html.png" class="icon">
-                        <p> Html</p>
+                        <p class="skil"> Html</p>
                     </div>
                     <div>
                         <img src="./lib/css.png" class="icon">
-                        <p> Css</p>
+                        <p class="skil"> Css</p>
                     </div>
                     <div>
                         <img src="./lib/js.png" class="icon">
-                        <p> javaScript</p>
+                        <p class="skil"> javaScript</p>
                     </div>
                     <div>
                         <img src="./lib/bo.png" class="icon">
-                        <p> Boostrap</p>
+                        <p class="skil"> Boostrap</p>
                     </div>
                     <div>
                         <img src="./lib/more.jpg" class="icon">
-                        <p> more</p>
+                        <p class="skil"> more</p>
                     </div>
 
 
                 </div>
+
+               
 
 
             </div>
@@ -88,50 +93,109 @@
         <section class="botPart" id="work">
 
             <div class="work">
+                <h2>Works</h2><small>(it's a slider)</small>
+                <!-- <div class="content1">
+                    <article class="one">
+						<h3>PICO-8</h3>
+						<img src="./lib/trap.PNG" alt="image" class="bloque">
+                        <p>Jeu : IT's a trap</p>
+						<button><a href="">MORE</a></button>
+					</article>
+					<article class="one">
+						<h3>Cinema 4D</h3>
+						
+                        <img src="./lib/screenshot_20-1-10_18-49.png" alt="image" class="bloque">
+                        <p>Vaisseau spatial 3D</p>
+						<button><a href="">MORE</a></button>
+					</article>
+					<article class="one">
+						<h3>Three.js</h3>
+						
+                        <img src="./lib/Particules.PNG" alt="image" class="bloque">
+                        <p>Particules 3D</p>
+						<button><a href="">MORE</a></button>
+					</article>
+					<article class="one">
+						<h3>Three.js</h3>
+						<img src="./lib/galaxy.PNG" alt="" class="bloque">
+                        <p>Galaxy 3D</p>
+						<button><a href="">MORE</a></button>
+					</article>
 
-                <h2>Work</h2>
 
-               
+                </div> -->
+                <section class="carousel">
+                    <ul class="carousel-items">
+                        <li class="carousel-item">
+                            <div class="card">
+                                <h3 class="card-title">PICO-8</h3>
+                                <img src="./lib/trap.PNG" alt="image" class="bloque" />
+                                <div class="card-content">
+                                    <p>Jeu : IT's a trap</p>
+                                    <button><a href="">MORE</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-item">
+                            <div class="card">
+                                <h3 class="card-title">Cinema 4D</h3>
+                                <img src="./lib/screenshot_20-1-10_18-49.png" class="bloque" />
+                                <div class="card-content">
+                                    <p>Vaisseau spatial 3D</p>
+                                    <button><a href="">MORE</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-item">
+                            <div class="card">
+                                <h3 class="card-title">Three.js</h3>
+                                <img src="./lib/Particules.PNG" class="bloque"/>
+                                <div class="card-content">
+                                    <p>Particules 3D</p>
+                                    <button><a href="">MORE</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="carousel-item">
+                            <div class="card">
+                                <h3 class="card-title">Three.js</h3>
+                                <img src="./lib/galaxy.PNG" class="bloque"/>
+                                <div class="card-content">
+                                    <p>Galaxy 3D</p>
+                                    <button><a href="">MORE</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </section>
+
 
 
 
             </div>
-
-            <div class="scrolldown3">
-
-                <a href="#info">
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </a>
-            </div>
-
         </section>
-
-
         
-    </section>
+    </main>
+
     <footer>
         <div class="foot">
             <div>
                 
-                <a href="https://github.com/sebastianmel"><img src="./lib/git.jpg" class="icon"></a>
+                <a href="https://github.com/sebastianmel"><img src="./lib/git.jpg" class="icon2"></a>
             </div>
             <h1>- S -</h1>
             <div>
-                <img src="./lib/mail.png" class="icon">
+                <!-- <img src="./lib/mail.png" class="icon"> -->
                 <a> Smeliot86@gmail.com</a>
             </div>
         </div>
             
         </div>
-        <!-- <p>© 2020 by Sebastian Méliot</p> -->
+        <p>© 2020 by Sebastian Méliot</p>
     </footer>
 
-    <!-- !-- jQuery et Bootstrap-->
-    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+   
 </body>
 
 </html>
